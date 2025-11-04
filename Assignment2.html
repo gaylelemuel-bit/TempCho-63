@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Forcast Page</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            background-image: url(./temp.images/banner.jpg);
+            padding: 80px;
+            color: orange;
+            font-size: 30px;
+            margin-bottom: 100px;
+
+        }
+        h1{
+            display: flex;
+            font-family: Georgia;
+            justify-content: center;
+        }
+        section{
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 50px;
+        }
+        .forcast-card{
+            background-image: url(./temp.images/jsky.jpeg);
+            background-size: cover;
+            border: 5px solid yellow;
+            border-radius: 40px;
+            overflow: hidden;
+            box-shadow: 1px 5px 30px yellow;
+        }
+        p{
+            padding-left: 40px;
+            color: red;
+            font-size: 25px;
+        }
+        body{
+            background-color: blue;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            margin: 1px;
+            padding: 4px;
+        }
+        button{
+            background-color: white;
+            padding: 10px;
+            color: red;
+            font-weight: bold;
+            font-size: 25px;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+        button:active
+        {background-color: red;
+            color: white;
+            box-shadow: 0px 15px 20px yellow;
+        }
+        li{
+            color: whitesmoke;
+            font-size: 20px;
+            margin-top: 10px;
+        }
+      
+    </style>
+</head>
+<body>
+    <header>
+    <h1>Convert Celsius to Fahrenheit</h1>
+    </header>
+    <section>
+        <div class="forcast-card">
+            <img src="./temp.images/rainy-.ico" alt="">
+            <p> 75 Degrees</p>
+            </div>
+        <div class="forcast-card">
+            <img src="./temp.images/rainy-.ico" alt="">
+            <p> 82 Degrees</p>
+        </div>
+        <div class="forcast-card">
+            <img src="./temp.images/rainy-.ico" alt="">
+            <p> 72 Degrees</p>
+        </div>
+            
+    </section>
+    <button onclick="celsiusToFahrenheit()">Convert to Fahrenheit</button>
+
+    <div id="tempResult">
+
+    </div>
+    <script src="./Scripts/Assignment2.js"> </script>
+    
+</body>
+</html>
