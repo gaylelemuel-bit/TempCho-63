@@ -1,4 +1,16 @@
-.cold{
+
+
+
+#thermo{
+    width: 10px;
+    height: 200px;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-bottom: 20px;
 
 }
-.hot
+.level{
+    background-color: blue;
+    height: 20px;
+    width: 10px;
+}

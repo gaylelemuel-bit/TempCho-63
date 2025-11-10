@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Final.css">
+</head>
+<body>
+    <header class="site-header">
+    <div class="header-content">
+        <h1>In His Hands: A Weather Dashboard</h1>
+        <p>God blesses us with the seasons <span>— Genesis 8:22</span></p>
+    </div>
+</header>
+
+    <h2> Convert Temperatures</h2>
+    <section>
+        <div class="btn-group">
+       <button class=btn onclick="celsiusFahrenheit()"> Celsius to Fahrenheit</button>
+        <button class="btn" onclick="fahrenheitCelsius()">Fahrenheit to Celsius</button>
+        </div>
+    </section>
+
+    <section class="thermometer">
+    <p id="Temps"></p>
+    <div id="thermo">
+        <p id="level"></p> </div>
+    </section>
+
+    
+<section class="table-container">
+    <h2>Conversion Table (0 to 100&deg;C)</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Celsius&deg;</th>
+                <th> Fahrenheit&deg;</th>
+            </tr>
+            <button class="btn"onclick="generateTemp()"> Generate Table</button>
+            <tbody id="temps">
+                <tr>
+                </tr>
+            </tbody>
+        </thead>
+    </table>
+</section>
+    <script src="./Scripts/Final.js"></script>
+</body>
+<footer class="site-footer">
+    <p>&copy; 2025 All rights Reserved | Glory to God  </p>
+</footer>
+</html>
